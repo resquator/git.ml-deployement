@@ -36,7 +36,7 @@ def hello_world():
         v = [hometeam, awayteam, odd_1, odd_N, odd_2]
         result=model.predict_proba([v])
 
-        html = '<html><body><h2>Pronostic for your request</h2>'
+        html = '<html><body><h1>Pronostic for your request</h1><br><h3>V1.0</h3>'
         html = html + f'<p>You request a pronostic validation for {hometeam} Vs. {awayteam}</p>'
         html = html + f'Odds given was {odd_1} {hometeam} to win, {odd_N} deuce, {odd_2} {awayteam} to win<br><hr>'
         html = html + f'(1) is {np.round(result[0][0],2)*100}%<br>'
