@@ -32,8 +32,10 @@ def hello_world():
         odd_1  = np.float64(flask.request.form['1'])
         odd_N = np.float64(flask.request.form['N'])
         odd_2 = np.float(flask.request.form['2'])
+        
+        month = flask.request.form['month']
 
-        v = [hometeam, awayteam, odd_1, odd_N, odd_2]
+        v = [hometeam, awayteam, month, odd_1, odd_N, odd_2]
         result=model.predict_proba([v])
 
         html = '<html><body><h1>Pronostic for your request</h1><br><h3>V1.0</h3>'
