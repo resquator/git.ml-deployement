@@ -2,10 +2,13 @@
 <style>    body.exf {
 	margin-left: 50px;
 	width: 500px;
+    background-color: grey;
+    color: white;
 }
 </style>
    <body class="exf">
-       <h2>Football Game Result Predictor V1.0b</h2>
+       <h2>Football Game Result Predictor V1.0c</h2>
+       <h3>Define a game by selecting a Home Team and an Away Team</h3>
       <form action = "http://resquator.pythonanywhere.com/" method = "POST">
          <label for="ht">Home Team:</label>
          <select id="cars" name="hometeam">
@@ -87,7 +90,7 @@
 
 
 <h2>Choose Odds for (1/N/2)</h2>
-
+<p>Use the sliders to define odds for your game,
 <h3>Odds for home team to win (1)</h3>
 <div class="slidecontainer">
 <div class="slider_left">
