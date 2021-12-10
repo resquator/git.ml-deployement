@@ -23,6 +23,9 @@ def hello_world():
         return(flask.render_template('predictorform.html'))
 
     if flask.request.method == 'POST':
+        print('Loading model ....')
+        cwd = os.getcwd()
+        print(f'CURRENT FOLDER {cwd}')
         with open('finalized_odds.sav', 'rb') as f:
             model = pickle.load(f)
         print('MODEL LOADED successfully')
